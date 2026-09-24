@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - StreamBox</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="home.html">StreamBox</a>
+    <nav>
+      <a class="active" href="home.html">Home</a>
+      <a href="watchlist.html">Watchlist</a>
+      <a href="profile.html">Profile</a>
+      <button id="logoutButton" class="link-button">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">WATCH SOMETHING GREAT</p>
+      <h1>Find your next favourite video.</h1>
+      <p>Browse simple, enjoyable videos in one place.</p>
+    </section>
+
+    <div class="toolbar">
+      <input id="searchInput" type="search" placeholder="Search videos...">
+      <div id="categoryButtons" class="category-list"></div>
+    </div>
+
+    <p id="homeMessage" class="message"></p>
+    <section id="videoList" class="video-grid"></section>
+  </main>
+
+  <script src="js/auth.js"></script>
+  <script src="js/videos.js"></script>
+  <script src="js/user.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

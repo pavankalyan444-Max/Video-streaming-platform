@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - StreamBox</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="admin-dashboard.html">StreamBox Admin</a>
+    <nav>
+      <button id="adminLogout" class="link-button">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Admin Dashboard</h1>
+
+    <!-- JavaScript places the four statistics inside this section. -->
+    <section id="stats" class="stats-grid"></section>
+
+    <div class="admin-layout">
+      <section class="panel">
+        <h2 id="formTitle">Add Video</h2>
+
+        <form id="videoForm">
+          <input id="videoId" type="hidden">
+
+          <label>
+            Title
+            <input id="videoTitle" required>
+          </label>
+
+          <label>
+            Description
+            <textarea id="videoDescription" required></textarea>
+          </label>
+
+          <label>
+            Category
+            <input id="videoCategory" required>
+          </label>
+
+          <label>
+            Thumbnail URL
+            <input id="videoThumbnail" required>
+          </label>
+
+          <label>
+            Video URL
+            <input id="videoUrl" required>
+          </label>
+
+          <label>
+            Duration
+            <input id="videoDuration" placeholder="05:30" required>
+          </label>
+
+          <button class="button primary" type="submit">Save Video</button>
+          <button id="cancelEdit" class="button outline hidden" type="button">
+            Cancel Edit
+          </button>
+        </form>
+
+        <p id="adminVideoMessage" class="message"></p>
+      </section>
+
+      <section class="panel">
+        <h2>All Videos</h2>
+        <div id="adminVideos"></div>
+      </section>
+    </div>
+
+    <section class="panel">
+      <h2>Registered Users</h2>
+      <div id="usersList"></div>
+    </section>
+  </main>
+
+  <script src="js/auth.js"></script>
+  <script src="js/videos.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - StreamBox</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="form-page">
+    <form id="signupForm" class="form-card">
+      <a class="logo" href="index.html">StreamBox</a>
+      <h1>Create Account</h1>
+
+      <label>
+        Full Name
+        <input id="name" type="text" required>
+      </label>
+
+      <label>
+        Email
+        <input id="email" type="email" required>
+      </label>
+
+      <label>
+        Password
+        <input id="password" type="password" minlength="4" required>
+      </label>
+
+      <p id="message" class="message"></p>
+      <button class="button primary full" type="submit">Sign Up</button>
+      <p class="form-footer">Already registered? <a href="login.html">Login</a></p>
+    </form>
+  </main>
+
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
